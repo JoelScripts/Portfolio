@@ -1,334 +1,397 @@
-<!-- HELLO
--
-DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
-Created by Anil Seervi.
--
-GitHub repo: https://github.com/JoelScripts/Portfolio
--
-Have fun creating your portfolio on this template!!! -->
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- preconnect to google fonts for faster fetching of fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- Title -->
-		<title>Joel G | Software Developer</title>
-		<!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-		<meta
-			name="keywords"
-			content="[Joel G], Joel G, Portfolio, Developer, JavaScript, TypeScript, React, Zenduty"
-		/>
-		<!-- Improve your SEO by adding a small descrption of you -->
-		<meta name="title" content="Joel G | Software Developer, Coding" />
-		<meta
-			name="description"
-			content="Portfolio Website of Joel G, Software Developer, Coding"
-		/>
-		<meta name="theme-color" content="#4a00e0" />
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://anilseervi.pages.dev/" />
-		<meta property="og:title" content="Joel G | Software Developer, Coding" />
-		<meta
-			property="og:description"
-			content="Portfolio Website of Joel G | Software Developer, Coding"
-		/>
-		<meta
-			property="og:image"
-			content="https://anilseervi.vercel.app/assets/Thumbnail.png"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- SEO -->
+    <title>Joel G — Software, Lua &amp; FiveM Developer</title>
+    <meta
+      name="keywords"
+      content="Joel G, JoelScripts, Portfolio, Developer, Lua, FiveM, Discord Bots, JavaScript, Software Developer, Streamer"
+    />
+    <meta name="title" content="Joel G — Software, Lua &amp; FiveM Developer" />
+    <meta
+      name="description"
+      content="Portfolio of Joel G — software and Lua developer building FiveM servers, Discord bots and community tools. 5+ years of experience."
+    />
+    <meta name="theme-color" content="#08090d" />
+    <link rel="canonical" href="https://joelscripts.github.io/Portfolio/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://joelscripts.github.io/Portfolio/" />
+    <meta property="og:title" content="Joel G — Software, Lua &amp; FiveM Developer" />
+    <meta
+      property="og:description"
+      content="Software and Lua developer building FiveM servers, Discord bots and community tools."
+    />
+    <meta property="og:image" content="./assets/profile.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://devfolio.js.org" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="Joel G | Software Developer" />
-    <!-- short description that shows up while your portfolio is shared -->
+    <meta property="twitter:url" content="https://joelscripts.github.io/Portfolio/" />
+    <meta property="twitter:title" content="Joel G — Software, Lua &amp; FiveM Developer" />
     <meta
       property="twitter:description"
-      content="Made By Joel G | ScriptsJoel | read_status_joel_"
+      content="Software and Lua developer building FiveM servers, Discord bots and community tools."
     />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta
-      property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/devfolio.png"
-    />
+    <meta property="twitter:image" content="./assets/profile.png" />
 
-    <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script defer src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
-
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Joel G",
+        "alternateName": "JoelScripts",
+        "url": "https://joelscripts.github.io/Portfolio/",
+        "jobTitle": "Software & FiveM Developer",
+        "sameAs": [
+          "https://github.com/JoelScripts",
+          "https://www.twitch.tv/joett214744",
+          "https://www.instagram.com/aviation_joeluk/"
+        ]
       }
-      gtag("js", new Date())
-
-      gtag("config", "UA-122228201-4")
     </script>
-    <!-- End of Google Analytics -->
   </head>
-  <body>
-    <!-- Hero Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Joel G</span>
-          <br />
-          I'm A Software and LUA and Fivem Developer.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-        </p>
-      </section>
-      <a href="#contact" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
-    </div>
-    <!-- /END Hero Section -->
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/profile.png"
-              alt="Profile Image"
-              width="450"
-              height="350"
-            />
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ══ Background décor ══ -->
+    <div class="bg-decor" aria-hidden="true">
+      <span class="orb orb--violet"></span>
+      <span class="orb orb--cyan"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <!-- ══ Header ══ -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#home" class="logo" aria-label="Joel G — home">
+          <span class="logo__mark">JG</span>
+          <span class="logo__text">Joel G<span class="logo__dot">.</span></span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Primary">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#work" class="nav__link">Work</a>
+          <a href="#contact" class="nav__link">Contact</a>
+          <a href="#contact" class="btn btn--sm nav__cta">Let's talk</a>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ══ Hero ══ -->
+      <section class="hero" id="home">
+        <div class="container hero__inner">
+          <p class="eyebrow" data-reveal>
+            <span class="eyebrow__pulse"></span> Available for work &amp; collabs
+          </p>
+
+          <h1 class="hero__title" data-reveal style="--d: 0.08s">
+            I build servers
+            <span class="gradient-text">people play in.</span>
+          </h1>
+
+          <p class="hero__lead" data-reveal style="--d: 0.16s">
+            <strong>Joel G</strong> — Lua &amp; software developer, 5+ years building
+            FiveM servers, Discord bots and the tools that keep communities running.
+            Streaming on Twitch when I'm not shipping code.
+          </p>
+
+          <div class="hero__actions" data-reveal style="--d: 0.24s">
+            <a href="#work" class="btn btn--primary">
+              See the work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
           </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-          Hello My Name is Joel I am a Fivem Software Developer I Have Skills in Developing Fivem Servers and Software Developing as well as Coding in LUA, i have over 5+ Years Of Experince on Developing and Coding and im always happy to Learn more and i am also a Content Creator i Mainly Currently Stream on twitch you can find my twitch at the bottom of this website where my other socials are.
-            </p>
-            <span class="about-wrapper__cta">
-              <a href="https://github.com/JoelScripts" class="cta-btn cta-btn--resume">View Projects</a>
-            </span>
+
+          <div class="hero__socials" data-reveal style="--d: 0.32s">
+            <a href="https://github.com/JoelScripts" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.twitch.tv/joett214744" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+              <i class="fa-brands fa-twitch"></i>
+            </a>
+            <a href="https://www.instagram.com/aviation_joeluk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://discordapp.com/users/1052272521510129664" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <i class="fa-brands fa-discord"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
+      </section>
 
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">My Projects</h2>
+      <!-- ══ About ══ -->
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <span class="section__index">01 — About</span>
+            <h2 class="section__title">The human behind the code</h2>
+          </header>
 
-          <!-- CIRP PROJECT -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Discord Bot</h3>
-              <p class="project-wrapper__text-info">
-                This is one of the Many Examples i have One of them being a Discord Bot i have made for a friend which is a Auto moderation bot and So much more with plenty of Functions for everyone in the server to use.
+          <div class="about">
+            <div class="about__media" data-reveal>
+              <div class="about__frame">
+                <img
+                  src="./assets/profile.png"
+                  alt="Portrait of Joel G"
+                  width="450"
+                  height="350"
+                  loading="lazy"
+                />
+              </div>
+              <span class="about__badge">
+                <i class="fa-solid fa-code" aria-hidden="true"></i> 5+ years
+              </span>
+            </div>
+
+            <div class="about__body" data-reveal style="--d: 0.12s">
+              <p class="about__text about__text--lead">
+                Five years of code. Mostly Lua. Mostly for people who need their
+                server to <em>just work</em>.
               </p>
-              <div class="project-wrapper__text-btns">
+              <p class="about__text">
+                I build FiveM servers end to end — resources, scripts, integrations
+                and the reliability work that keeps a community online at 3am.
+                Discord bots with auto-moderation are the other half of my week.
+              </p>
+              <p class="about__text">
+                When I'm not coding, I stream on Twitch and run communities — so I
+                know exactly who uses what I build.
+              </p>
+
+              <div class="about__actions">
                 <a
-                  href="https://github.com/JoelScripts/CIRP-Voice-Mod"
+                  href="https://github.com/JoelScripts"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
+                  class="btn btn--primary"
                 >
-                <a href="https://github.com/JoelScripts/CIRP-Voice-Mod" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
+                  Explore GitHub <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="#contact" class="btn btn--ghost">Work with me</a>
               </div>
             </div>
-            
+          </div>
+        </div>
+      </section>
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="450"
-                    height="350"
-                  />
+      <!-- ══ Work ══ -->
+      <section class="section section--alt" id="work">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <span class="section__index">02 — Selected work</span>
+            <h2 class="section__title">Things I've built</h2>
+          </header>
+
+          <div class="projects">
+            <!-- ── Add a new project by duplicating one of these <article> blocks ── -->
+
+            <article class="project" data-reveal>
+              <a
+                class="project__media"
+                href="https://github.com/JoelScripts/CIRP-Voice-Mod"
+                target="_blank"
+                rel="noopener noreferrer"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img
+                  src="./assets/project.png"
+                  alt="Discord auto-moderation bot interface"
+                  width="450"
+                  height="350"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <span class="project__num">01</span>
+                <h3 class="project__title">Discord Auto-Mod Bot</h3>
+                <p class="project__desc">
+                  Auto-moderation, spam and raid protection, plus the everyday
+                  commands a busy server actually uses — built for a friend's
+                  community and running 24/7.
+                </p>
+                <ul class="tags">
+                  <li>JavaScript</li>
+                  <li>Discord API</li>
+                  <li>Automation</li>
+                </ul>
+                <div class="project__links">
+                  <a
+                    href="https://github.com/JoelScripts/CIRP-Voice-Mod"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  </a>
                 </div>
+              </div>
+            </article>
+
+            <article class="project" data-reveal style="--d: 0.1s">
+              <a
+                class="project__media"
+                href="https://trello.com/invite/b/66f2b3b51eddab8ae7324955/ATTI7f81fd07fc3b32c4948f9ac479fe8099E9700BF0/wchrp-dev-to-do"
+                target="_blank"
+                rel="noopener noreferrer"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img
+                  src="./assets/WCHRP.png"
+                  alt="WCHRP FiveM roleplay server artwork"
+                  width="450"
+                  height="350"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <span class="project__num">02</span>
+                <h3 class="project__title">WCHRP FiveM Server</h3>
+                <p class="project__desc">
+                  A full FiveM roleplay server for the WCHRP PlayStation community —
+                  custom resources, gameplay systems and a public roadmap I update as
+                  the server grows.
+                </p>
+                <ul class="tags">
+                  <li>Lua</li>
+                  <li>FiveM</li>
+                  <li>Server Design</li>
+                </ul>
+                <div class="project__links">
+                  <a
+                    href="https://trello.com/invite/b/66f2b3b51eddab8ae7324955/ATTI7f81fd07fc3b32c4948f9ac479fe8099E9700BF0/wchrp-dev-to-do"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Roadmap <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://discord.gg/HAr9NaDbbj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Join Discord <i class="fa-brands fa-discord" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- ── End project block ── -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ Contact ══ -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact__inner" data-reveal>
+            <span class="section__index">03 — Contact</span>
+            <h2 class="contact__title">
+              Got a server to build?<br />
+              <span class="gradient-text">Let's talk.</span>
+            </h2>
+            <p class="contact__text">
+              Scripts, servers, bots — or just a question. Discord DMs are the
+              fastest way to reach me.
+            </p>
+
+            <div class="contact__actions">
+              <a
+                href="https://discordapp.com/users/1052272521510129664"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary btn--lg"
+              >
+                <i class="fa-brands fa-discord" aria-hidden="true"></i> Message me on
+                Discord
+              </a>
+              <a
+                href="https://github.com/JoelScripts"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--ghost btn--lg"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
               </a>
             </div>
-          </article>
-
-                   <!-- Each .row is a project -->
-                   <article class="row">
-                    <div class="project-wrapper__text">
-                      <h3 class="project-wrapper__text-title">Fivem WCHRP</h3>
-                      <p class="project-wrapper__text-info">
-                        My Friend Kyle Who owns WCHRP which is a GTA RP Server for Playstation invited me to Join the staff team at WCHRP which is something i was greatful for i asked him if he liked the idea of me Making a Fivem Server for WCHRP which he agreed and this is a project i am constantly Working on to make sure the WCHRP Community Enjoys the server i am making.
-                      </p>
-                      <div class="project-wrapper__text-btns">
-                        <a
-                          href="https://trello.com/invite/b/66f2b3b51eddab8ae7324955/ATTI7f81fd07fc3b32c4948f9ac479fe8099E9700BF0/wchrp-dev-to-do"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="cta-btn cta-btn--hero cta-btn--projects"
-                          >VIEW TRELLO PAGE</a
-                        >
-                        <a href="https://discord.gg/HAr9NaDbbj" target="_blank" class="cta-btn text-color-main"
-                          >CLICK TO JOIN THE WCHRP DISCORD SERVER</a
-                        >
-                      </div>
-                    </div>
-                    
-        
-                    <div class="project-wrapper__image">
-                      <a href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                          <img
-                            src="./assets/WCHRP.png"
-                            class="img-fluid"
-                            alt="Project Image2"
-                            width="0"
-                            height="0"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </article>
-                  <!-- /END Project -->
-          <!-- /END Project -->
-
-                             <!-- Each .row is a project -->
-                             <article class="row">
-                              <div class="project-wrapper__text">
-                                <h3 class="project-wrapper__text-title">MORE TO BE ADDED SOON</h3>
-                                <p class="project-wrapper__text-info">
-                                  MORE PROJECTS WILL BE ADDED OVER TIME.
-                                </p>
-                                <div class="project-wrapper__text-btns">
-                                  <a
-                                    href="https://joelscripts.github.io/Portfolio/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="cta-btn cta-btn--hero cta-btn--projects"
-                                    >BACK TO HOME PAGE</a
-                                  >
-                                  <a href="https://joelscripts.github.io/Portfolio/" target="_blank" class="cta-btn text-color-main"
-                                    >BACK TO HOME PAGE</a
-                                  >
-                                </div>
-                              </div>
-                              
-                  
-                              <div class="project-wrapper__image">
-                                <a href="#" target="_blank" rel="noopener noreferrer">
-                                  <div class="thumbnail rounded">
-                                    <img
-                                      src="./assets/OIP.jpg"
-                                      class="img-fluid"
-                                      alt="Project Image2"
-                                      width="0"
-                                      height="0"
-                                    />
-                                  </div>
-                                </a>
-                              </div>
-                            </article>
-                            <!-- /END Project -->
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Please Contact me Via Discord</p>
-          <a href="https://discordapp.com/users/1052272521510129664" class="cta-btn cta-btn--resume">Link To my Discord Profile</a>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- END Contact Section -->
+      </section>
+    </main>
 
-    <!-- Footer Section -->
+    <!-- ══ Footer ══ -->
     <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      <div class="container footer__inner">
+        <a href="#home" class="logo logo--footer">
+          <span class="logo__mark">JG</span>
+          <span class="logo__text">Joel G<span class="logo__dot">.</span></span>
         </a>
-        <div class="social-links">
-          </a>
-          <a
-            href="https://www.instagram.com/aviation_joeluk/?__pwa=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.twitch.tv/joett214744"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitch"
-          >
-            <i class="fa-brands fa-twitch"></i>
-          </a>
-          <a
-            href="https://github.com/JoelScripts"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
+
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer__socials">
+          <a href="https://github.com/JoelScripts" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
+          <a href="https://www.twitch.tv/joett214744" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+            <i class="fa-brands fa-twitch"></i>
+          </a>
+          <a href="https://www.instagram.com/aviation_joeluk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://discordapp.com/users/1052272521510129664" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <i class="fa-brands fa-discord"></i>
+          </a>
         </div>
-        <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Made by
-          <a
-            href="https://github.com/JoelScripts"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Me</a
-          >. <br />Made with &hearts;
-        </p>
+      </div>
+
+      <div class="container footer__bottom">
+        <p>© <span id="year"></span> Joel G — designed &amp; built from scratch.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
       </div>
     </footer>
-    <!-- END Footer Section -->
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    <script src="./javascript/main.js"></script>
   </body>
 </html>
