@@ -1,31 +1,41 @@
-# Joel G — Portfolio
+# Portfolio
 
-Dark, modern, single-page portfolio. Plain HTML/CSS/JS — no build step.
+Personal portfolio site for **Joel G** ([@JoelScripts](https://github.com/JoelScripts)) — software, Lua and FiveM developer.
 
-**Live site:** https://joelscripts.github.io/Portfolio/
+Static HTML, CSS and vanilla JavaScript. No build step, no dependencies.
 
 ## Structure
 
 ```
-index.html        — all content & sections
-css/main.css      — all styles (tokens at the top of the file)
-javascript/main.js — nav, scroll reveal, scroll spy, card spotlight
-assets/           — images (profile, project thumbnails)
+index.html            # single page: hero, about, work, contact
+css/main.css          # design tokens + all styling
+javascript/main.js    # header state, mobile nav, scroll spy, reveal
+assets/               # images (portrait, project art)
 ```
 
-## Editing
-
-- **Colours / fonts:** change the custom properties in `:root` at the top of `css/main.css`.
-- **Add a project:** duplicate one `<article class="project">` block inside the Work section of `index.html` (marked with `<!-- Add a new project ... -->`).
-- **Change copy:** all text lives in `index.html`.
-- **Animations:** reveal-on-scroll elements just need a `data-reveal` attribute.
-
-## Running locally
+## Local development
 
 Open `index.html` directly, or serve the folder:
 
 ```bash
-python -m http.server 4173
+python -m http.server 8000
+# → http://localhost:8000
 ```
 
-Then visit http://127.0.0.1:4173/
+## Deploying
+
+Push the repository and enable GitHub Pages on the `main` branch (root).
+The site is served as-is — there is nothing to build.
+
+## Editing content
+
+- **Text, links and project entries** — everything lives in `index.html`.
+  Projects are `<article class="work-item">` blocks inside the `#work` section;
+  duplicate one to add another.
+- **Colours and fonts** — the `:root` block at the top of `css/main.css`.
+  The palette (`#08090b` base, `#1b2029` hairlines, `#ffab48` accent) matches
+  [Project Tracker](https://github.com/JoelScripts/Project-Tracker).
+
+## Licence
+
+See [LICENSE](./LICENSE).

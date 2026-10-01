@@ -9,15 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
-    />
-
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      referrerpolicy="no-referrer"
     />
 
     <!-- Styles -->
@@ -34,7 +27,7 @@
       name="description"
       content="Portfolio of Joel G — software and Lua developer building FiveM servers, Discord bots and community tools. 5+ years of experience."
     />
-    <meta name="theme-color" content="#08090d" />
+    <meta name="theme-color" content="#08090b" />
     <link rel="canonical" href="https://joelscripts.github.io/Portfolio/" />
 
     <!-- Open Graph -->
@@ -77,19 +70,103 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <!-- ══ Icon sprite ══ -->
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.2c-3.34.73-4.04-1.4-4.04-1.4-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"
+        />
+      </symbol>
+      <symbol id="i-twitch" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M4.3 2 3 5.5v13.2h4.5V22h2.6l2.5-3.3h3.8L21 13.7V2H4.3Zm15 10.7-2.6 2.8h-4.1L10 17.8v-2.3H6.4V3.7h12.9v9Zm-4.9-5.2h1.7v4.6h-1.7V7.5Zm-4.5 0h1.7v4.6H9.9V7.5Z"
+        />
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1 0-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.3 1-.4 2.1 0 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2 0 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.3-1 .4-2.1 0-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.3-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2 0-1.6-.1-4.7-.1Zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 8.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Zm6.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"
+        />
+      </symbol>
+      <symbol id="i-discord" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M19.3 5.3A16.8 16.8 0 0 0 15.1 4l-.2.4c1.4.4 2.6 1 3.7 1.7A13.7 13.7 0 0 0 12 5c-2.3 0-4.5.5-6.6 1.1a13.6 13.6 0 0 1 3.7-1.7L8.9 4A16.8 16.8 0 0 0 4.7 5.3C2.1 9.1 1.4 12.8 1.7 16.4a16.9 16.9 0 0 0 5.1 2.6l1-1.7c-.9-.3-1.7-.7-2.5-1.2l.5-.4a12 12 0 0 0 10.4 0l.5.4c-.8.5-1.6.9-2.5 1.2l1 1.7a16.9 16.9 0 0 0 5.1-2.6c.4-4.2-.7-7.9-3.5-11.1ZM8.5 14.2c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm7 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"
+        />
+      </symbol>
+      <symbol id="i-arrow-ur" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M7 17 17 7M8 7h9v9"
+        />
+      </symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 5v14M5 12l7 7 7-7"
+        />
+      </symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 19V5M5 12l7-7 7 7"
+        />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 6h18v12H3z M3 7l9 6 9-6"
+        />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          d="M4 7h16M4 12h16M4 17h16"
+        />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          d="M6 6l12 12M18 6 6 18"
+        />
+      </symbol>
+    </svg>
+
     <!-- ══ Background décor ══ -->
     <div class="bg-decor" aria-hidden="true">
-      <span class="orb orb--violet"></span>
-      <span class="orb orb--cyan"></span>
       <span class="grid-overlay"></span>
     </div>
 
     <!-- ══ Header ══ -->
     <header class="header" id="header">
       <div class="container header__inner">
-        <a href="#home" class="logo" aria-label="Joel G — home">
-          <span class="logo__mark">JG</span>
-          <span class="logo__text">Joel G<span class="logo__dot">.</span></span>
+        <a href="#home" class="brand">
+          <span class="brand__mark" aria-hidden="true">JG</span>
+          <span class="brand__name">Joel&nbsp;G</span>
         </a>
 
         <nav class="nav" id="nav" aria-label="Primary">
@@ -106,7 +183,12 @@
           aria-expanded="false"
           aria-controls="nav"
         >
-          <span></span><span></span><span></span>
+          <svg class="nav-toggle__open" width="20" height="20" aria-hidden="true">
+            <use href="#i-menu" />
+          </svg>
+          <svg class="nav-toggle__close" width="20" height="20" aria-hidden="true">
+            <use href="#i-close" />
+          </svg>
         </button>
       </div>
     </header>
@@ -115,42 +197,106 @@
       <!-- ══ Hero ══ -->
       <section class="hero" id="home">
         <div class="container hero__inner">
-          <p class="eyebrow" data-reveal>
-            <span class="eyebrow__pulse"></span> Available for work &amp; collabs
-          </p>
+          <div class="hero__lead-col">
+            <p class="eyebrow" data-reveal>
+              <span class="eyebrow__pulse"></span> Available for work &amp; collabs
+            </p>
 
-          <h1 class="hero__title" data-reveal style="--d: 0.08s">
-            I build servers
-            <span class="gradient-text">people play in.</span>
-          </h1>
+            <h1 class="hero__title" data-reveal style="--d: 0.08s">
+              I build servers<br />
+              <span class="accent">people play in.</span>
+            </h1>
 
-          <p class="hero__lead" data-reveal style="--d: 0.16s">
-            <strong>Joel G</strong> — Lua &amp; software developer, 5+ years building
-            FiveM servers, Discord bots and the tools that keep communities running.
-            Streaming on Twitch when I'm not shipping code.
-          </p>
+            <p class="hero__text" data-reveal style="--d: 0.16s">
+              <strong>Joel G</strong> — Lua &amp; software developer, 5+ years building FiveM
+              servers, Discord bots and the tools that keep communities running. Streaming on
+              Twitch when I'm not shipping code.
+            </p>
 
-          <div class="hero__actions" data-reveal style="--d: 0.24s">
-            <a href="#work" class="btn btn--primary">
-              See the work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
-            </a>
-            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+            <div class="hero__actions" data-reveal style="--d: 0.24s">
+              <a href="#work" class="btn btn--primary">
+                See the work
+                <svg width="15" height="15" aria-hidden="true"><use href="#i-arrow-down" /></svg>
+              </a>
+              <a href="#contact" class="btn btn--ghost">Get in touch</a>
+            </div>
+
+            <ul class="socials" data-reveal style="--d: 0.32s">
+              <li>
+                <a
+                  href="https://github.com/JoelScripts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <svg width="17" height="17" aria-hidden="true"><use href="#i-github" /></svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.twitch.tv/joett214744"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitch"
+                >
+                  <svg width="17" height="17" aria-hidden="true"><use href="#i-twitch" /></svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/aviation_joeluk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg width="17" height="17" aria-hidden="true"><use href="#i-instagram" /></svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discordapp.com/users/1052272521510129664"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Discord"
+                >
+                  <svg width="17" height="17" aria-hidden="true"><use href="#i-discord" /></svg>
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div class="hero__socials" data-reveal style="--d: 0.32s">
-            <a href="https://github.com/JoelScripts" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.twitch.tv/joett214744" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
-              <i class="fa-brands fa-twitch"></i>
-            </a>
-            <a href="https://www.instagram.com/aviation_joeluk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://discordapp.com/users/1052272521510129664" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-              <i class="fa-brands fa-discord"></i>
-            </a>
-          </div>
+          <aside class="status-panel" data-reveal style="--d: 0.2s" aria-label="Current status">
+            <header class="status-panel__head">
+              <span class="status-panel__title">status.txt</span>
+              <span class="status-panel__state"><i class="dot"></i> online</span>
+            </header>
+            <dl class="status-panel__rows">
+              <div class="status-row">
+                <dt>Available</dt>
+                <dd>yes — collabs &amp; contract</dd>
+              </div>
+              <div class="status-row">
+                <dt>Languages</dt>
+                <dd>Lua · JavaScript · TypeScript</dd>
+              </div>
+              <div class="status-row">
+                <dt>Building</dt>
+                <dd>FiveM · Discord bots · web tools</dd>
+              </div>
+              <div class="status-row">
+                <dt>Experience</dt>
+                <dd>5+ years shipping</dd>
+              </div>
+              <div class="status-row">
+                <dt>Now</dt>
+                <dd><span class="accent">Project Tracker</span> — open sourced</dd>
+              </div>
+            </dl>
+            <footer class="status-panel__foot">
+              <span>last commit</span>
+              <span>just now</span>
+            </footer>
+          </aside>
         </div>
       </section>
 
@@ -158,7 +304,7 @@
       <section class="section" id="about">
         <div class="container">
           <header class="section__head" data-reveal>
-            <span class="section__index">01 — About</span>
+            <span class="section__index">01 / About</span>
             <h2 class="section__title">The human behind the code</h2>
           </header>
 
@@ -167,30 +313,30 @@
               <div class="about__frame">
                 <img
                   src="./assets/profile.png"
-                  alt="Portrait of Joel G"
+                  alt="Joel G logo artwork"
                   width="450"
                   height="350"
                   loading="lazy"
                 />
               </div>
               <span class="about__badge">
-                <i class="fa-solid fa-code" aria-hidden="true"></i> 5+ years
+                <i class="dot dot--ok"></i> 5+ years
               </span>
             </div>
 
             <div class="about__body" data-reveal style="--d: 0.12s">
               <p class="about__text about__text--lead">
-                Five years of code. Mostly Lua. Mostly for people who need their
-                server to <em>just work</em>.
+                Five years of code. Mostly Lua. Mostly for people who need their server to
+                <em>just work</em>.
               </p>
               <p class="about__text">
-                I build FiveM servers end to end — resources, scripts, integrations
-                and the reliability work that keeps a community online at 3am.
-                Discord bots with auto-moderation are the other half of my week.
+                I build FiveM servers end to end — resources, scripts, integrations and the
+                reliability work that keeps a community online at 3am. Discord bots with
+                auto-moderation are the other half of my week.
               </p>
               <p class="about__text">
-                When I'm not coding, I stream on Twitch and run communities — so I
-                know exactly who uses what I build.
+                When I'm not coding, I stream on Twitch and run communities — so I know exactly
+                who uses what I build.
               </p>
 
               <div class="about__actions">
@@ -200,7 +346,8 @@
                   rel="noopener noreferrer"
                   class="btn btn--primary"
                 >
-                  Explore GitHub <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  Explore GitHub
+                  <svg width="15" height="15" aria-hidden="true"><use href="#i-arrow-ur" /></svg>
                 </a>
                 <a href="#contact" class="btn btn--ghost">Work with me</a>
               </div>
@@ -213,16 +360,39 @@
       <section class="section section--alt" id="work">
         <div class="container">
           <header class="section__head" data-reveal>
-            <span class="section__index">02 — Selected work</span>
+            <span class="section__index">02 / Selected work</span>
             <h2 class="section__title">Things I've built</h2>
           </header>
 
-          <div class="projects">
+          <div class="work">
             <!-- ── Add a new project by duplicating one of these <article> blocks ── -->
 
-            <article class="project" data-reveal>
+            <article class="work-item" data-reveal>
+              <span class="work-item__num">01</span>
+              <div class="work-item__body">
+                <h3 class="work-item__title">Discord Auto-Mod Bot</h3>
+                <p class="work-item__desc">
+                  Auto-moderation, spam and raid protection, plus the everyday commands a busy
+                  server actually uses — built for a friend's community and running 24/7.
+                </p>
+                <ul class="tags">
+                  <li>JavaScript</li>
+                  <li>Discord API</li>
+                  <li>Automation</li>
+                </ul>
+                <div class="work-item__links">
+                  <a
+                    href="https://github.com/JoelScripts/CIRP-Voice-Mod"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code
+                    <svg width="13" height="13" aria-hidden="true"><use href="#i-arrow-ur" /></svg>
+                  </a>
+                </div>
+              </div>
               <a
-                class="project__media"
+                class="work-item__media"
                 href="https://github.com/JoelScripts/CIRP-Voice-Mod"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -230,41 +400,45 @@
                 aria-hidden="true"
               >
                 <img
-                  src="./assets/project.png"
+                  src="./assets/project.jpg"
                   alt="Discord auto-moderation bot interface"
                   width="450"
                   height="350"
                   loading="lazy"
                 />
               </a>
-              <div class="project__body">
-                <span class="project__num">01</span>
-                <h3 class="project__title">Discord Auto-Mod Bot</h3>
-                <p class="project__desc">
-                  Auto-moderation, spam and raid protection, plus the everyday
-                  commands a busy server actually uses — built for a friend's
-                  community and running 24/7.
+            </article>
+
+            <article class="work-item" data-reveal style="--d: 0.08s">
+              <span class="work-item__num">02</span>
+              <div class="work-item__body">
+                <h3 class="work-item__title">WCHRP FiveM Server</h3>
+                <p class="work-item__desc">
+                  A full FiveM roleplay server for the WCHRP PlayStation community — custom
+                  resources, gameplay systems and a public roadmap I update as the server grows.
                 </p>
                 <ul class="tags">
-                  <li>JavaScript</li>
-                  <li>Discord API</li>
-                  <li>Automation</li>
+                  <li>Lua</li>
+                  <li>FiveM</li>
+                  <li>Server Design</li>
                 </ul>
-                <div class="project__links">
+                <div class="work-item__links">
                   <a
-                    href="https://github.com/JoelScripts/CIRP-Voice-Mod"
+                    href="https://trello.com/invite/b/66f2b3b51eddab8ae7324955/ATTI7f81fd07fc3b32c4948f9ac479fe8099E9700BF0/wchrp-dev-to-do"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Source code <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    Roadmap
+                    <svg width="13" height="13" aria-hidden="true"><use href="#i-arrow-ur" /></svg>
+                  </a>
+                  <a href="https://discord.gg/HAr9NaDbbj" target="_blank" rel="noopener noreferrer">
+                    Join Discord
+                    <svg width="13" height="13" aria-hidden="true"><use href="#i-discord" /></svg>
                   </a>
                 </div>
               </div>
-            </article>
-
-            <article class="project" data-reveal style="--d: 0.1s">
               <a
-                class="project__media"
+                class="work-item__media"
                 href="https://trello.com/invite/b/66f2b3b51eddab8ae7324955/ATTI7f81fd07fc3b32c4948f9ac479fe8099E9700BF0/wchrp-dev-to-do"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -279,36 +453,49 @@
                   loading="lazy"
                 />
               </a>
-              <div class="project__body">
-                <span class="project__num">02</span>
-                <h3 class="project__title">WCHRP FiveM Server</h3>
-                <p class="project__desc">
-                  A full FiveM roleplay server for the WCHRP PlayStation community —
-                  custom resources, gameplay systems and a public roadmap I update as
-                  the server grows.
+            </article>
+
+            <article class="work-item" data-reveal style="--d: 0.16s">
+              <span class="work-item__num">03</span>
+              <div class="work-item__body">
+                <h3 class="work-item__title">Project Tracker</h3>
+                <p class="work-item__desc">
+                  An open-source, local-first board for keeping a project on track — lanes,
+                  drag-and-drop tasks, labels, due dates and subtasks. No account and no server:
+                  everything stays in your browser.
                 </p>
                 <ul class="tags">
-                  <li>Lua</li>
-                  <li>FiveM</li>
-                  <li>Server Design</li>
+                  <li>React</li>
+                  <li>Vite</li>
+                  <li>Open Source</li>
                 </ul>
-                <div class="project__links">
+                <div class="work-item__links">
                   <a
-                    href="https://trello.com/invite/b/66f2b3b51eddab8ae7324955/ATTI7f81fd07fc3b32c4948f9ac479fe8099E9700BF0/wchrp-dev-to-do"
+                    href="https://github.com/JoelScripts/Project-Tracker"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Roadmap <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                  </a>
-                  <a
-                    href="https://discord.gg/HAr9NaDbbj"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Join Discord <i class="fa-brands fa-discord" aria-hidden="true"></i>
+                    Source code
+                    <svg width="13" height="13" aria-hidden="true"><use href="#i-arrow-ur" /></svg>
                   </a>
                 </div>
               </div>
+              <a
+                class="work-item__media"
+                href="https://github.com/JoelScripts/Project-Tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img
+                  src="./assets/project-tracker.png"
+                  alt="Project Tracker board interface"
+                  width="450"
+                  height="350"
+                  loading="lazy"
+                />
+              </a>
             </article>
 
             <!-- ── End project block ── -->
@@ -320,14 +507,14 @@
       <section class="section contact" id="contact">
         <div class="container">
           <div class="contact__inner" data-reveal>
-            <span class="section__index">03 — Contact</span>
+            <span class="section__index">03 / Contact</span>
             <h2 class="contact__title">
               Got a server to build?<br />
-              <span class="gradient-text">Let's talk.</span>
+              <span class="accent">Let's talk.</span>
             </h2>
             <p class="contact__text">
-              Scripts, servers, bots — or just a question. Discord DMs are the
-              fastest way to reach me.
+              Scripts, servers, bots — or just a question. Discord DMs are the fastest way to
+              reach me.
             </p>
 
             <div class="contact__actions">
@@ -337,8 +524,8 @@
                 rel="noopener noreferrer"
                 class="btn btn--primary btn--lg"
               >
-                <i class="fa-brands fa-discord" aria-hidden="true"></i> Message me on
-                Discord
+                <svg width="16" height="16" aria-hidden="true"><use href="#i-discord" /></svg>
+                Message me on Discord
               </a>
               <a
                 href="https://github.com/JoelScripts"
@@ -346,7 +533,8 @@
                 rel="noopener noreferrer"
                 class="btn btn--ghost btn--lg"
               >
-                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                <svg width="16" height="16" aria-hidden="true"><use href="#i-github" /></svg>
+                GitHub
               </a>
             </div>
           </div>
@@ -357,9 +545,9 @@
     <!-- ══ Footer ══ -->
     <footer class="footer">
       <div class="container footer__inner">
-        <a href="#home" class="logo logo--footer">
-          <span class="logo__mark">JG</span>
-          <span class="logo__text">Joel G<span class="logo__dot">.</span></span>
+        <a href="#home" class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">JG</span>
+          <span class="brand__name">Joel&nbsp;G</span>
         </a>
 
         <nav class="footer__nav" aria-label="Footer">
@@ -368,26 +556,54 @@
           <a href="#contact">Contact</a>
         </nav>
 
-        <div class="footer__socials">
-          <a href="https://github.com/JoelScripts" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.twitch.tv/joett214744" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
-            <i class="fa-brands fa-twitch"></i>
-          </a>
-          <a href="https://www.instagram.com/aviation_joeluk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://discordapp.com/users/1052272521510129664" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-        </div>
+        <ul class="socials socials--footer">
+          <li>
+            <a
+              href="https://github.com/JoelScripts"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg width="17" height="17" aria-hidden="true"><use href="#i-github" /></svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.twitch.tv/joett214744"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitch"
+            >
+              <svg width="17" height="17" aria-hidden="true"><use href="#i-twitch" /></svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/aviation_joeluk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg width="17" height="17" aria-hidden="true"><use href="#i-instagram" /></svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://discordapp.com/users/1052272521510129664"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Discord"
+            >
+              <svg width="17" height="17" aria-hidden="true"><use href="#i-discord" /></svg>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="container footer__bottom">
         <p>© <span id="year"></span> Joel G — designed &amp; built from scratch.</p>
         <a href="#home" class="back-to-top" aria-label="Back to top">
-          <i class="fa-solid fa-arrow-up"></i>
+          <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow-up" /></svg>
         </a>
       </div>
     </footer>
